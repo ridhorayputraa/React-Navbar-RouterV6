@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import { FaBars } from "react-icons/fa";
 
 export default function Navbar() {
   return (
@@ -26,6 +27,9 @@ export default function Navbar() {
               <li>Contact</li>
             </Link>
           </ul>
+          <button className="mobile-menu-icon">
+            <FaBars />
+          </button>
         </div>
       </nav>
     </div>
