@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { FaBars } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 
 export default function Navbar() {
+  const [Mobile, setMobile] = useState(false);
+
   return (
     <div>
       <nav className="navbar">
@@ -28,7 +31,10 @@ export default function Navbar() {
             </Link>
           </ul>
           <button className="mobile-menu-icon">
-            <FaBars />
+            {
+           
+                Mobile? <ImCross/> :  <FaBars /> 
+            }
           </button>
         </div>
       </nav>
