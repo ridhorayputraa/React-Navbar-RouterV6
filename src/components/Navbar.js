@@ -10,10 +10,10 @@ export default function Navbar() {
   return (
     <div>
       <nav className="navbar">
-        <div className="container">
+      
           <h3 className="logo">logo</h3>
 
-          <ul className="nav-links">
+          <ul className={Mobile ? "nav-links-mobile" :"nav-links"} onClick={() => setMobile(false)}>
             <Link to="/">
               <li>Home</li>
             </Link>
@@ -30,13 +30,13 @@ export default function Navbar() {
               <li>Contact</li>
             </Link>
           </ul>
-          <button className="mobile-menu-icon">
+          <button className="mobile-menu-icon" onClick={() => setMobile(!Mobile)}>
             {
-           
+
                 Mobile? <ImCross/> :  <FaBars /> 
             }
           </button>
-        </div>
+     
       </nav>
     </div>
   );

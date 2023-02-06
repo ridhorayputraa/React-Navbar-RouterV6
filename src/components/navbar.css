@@ -13,6 +13,9 @@ li {
   height: 10vh;
   line-height: 10vh;
   box-shadow: rgba(50, 50, 93, 0.3) 0 30px 30px -20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -25,13 +28,6 @@ li {
   width: 75%;
 }
 
-.container {
-  max-width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .nav-links li {
   color: black;
