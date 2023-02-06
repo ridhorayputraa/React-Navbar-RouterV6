@@ -8,7 +8,9 @@
 li {
   list-style-type: none;
 }
-
+a {
+  text-decoration: none;
+}
 .navbar {
   height: 10vh;
   line-height: 10vh;
@@ -27,7 +29,6 @@ li {
   justify-content: flex-end;
   width: 75%;
 }
-
 
 .nav-links li {
   color: black;
@@ -72,5 +73,20 @@ button {
     transition: all 0.5s ease-in-out;
     width: 100%;
     background-color: white;
+  }
+  ul li {
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+  }
+
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+  }
+  .hero h1 {
+    font-size: 50px;
   }
 }
